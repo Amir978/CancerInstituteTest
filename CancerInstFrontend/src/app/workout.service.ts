@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class WorkoutService {
   private headers: HttpHeaders;
   
-  private accessPointUrl: string = 'http://localhost:57251/api/Palindromes';
+  private accessPointUrl: string = 'http://localhost:5000/api/Palindromes';
 
   constructor(private http: HttpClient) {
     this.headers = new HttpHeaders({'Content-Type': 'application/json; charset=utf-8'});
