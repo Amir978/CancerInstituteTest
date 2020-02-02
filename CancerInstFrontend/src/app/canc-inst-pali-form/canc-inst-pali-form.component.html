@@ -1,0 +1,13 @@
+<div>
+    <h3> Palindrome Validation Check </h3>
+    <form>
+        <div class="form-group">
+            <label for="palindrome-input">Enter a phrase:</label>
+            <input type="text" id="palindrome-phrase" name="palindrome-phrase" [(ngModel)]="palindromeInfo.phrase" class="form-control" />
+        </div>
+       
+        <button type="button" class="btn btn-primary" (click)="addOrUpdatePalindromeRecord($event);">Check & Save</button>
+        <hr/>
+        <div *ngIf="returnedMessage" class="alert alert-info">{{returnedMessage}}</div>
+    </form>
+   </div>

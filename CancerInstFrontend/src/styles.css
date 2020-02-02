@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.main-container>h3, .main-container>h6{
+    text-align: center;
+}

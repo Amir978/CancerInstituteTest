@@ -1,0 +1,22 @@
+<h3>Palindromes Already Checked & Saved</h3>
+<table class="table table-hover">
+<thead>
+    <tr>
+        <th>Id</th>
+         <th>Phrase</th>
+        <th>Date Added</th>
+        <!-- -->
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let palindromeInfo  of palindromeData"> 
+        <td>{{ palindromeInfo.id  }}</td>
+        <td>{{ palindromeInfo.phrase  }}</td>
+        
+        <td>{{ palindromeInfo.dateAdded | date:'short' }}</td>
+        <!-- -->
+        
+    </tr>
+</tbody>
+</table>
